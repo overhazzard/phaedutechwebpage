@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P.H.A EduTech | Blog</title>
+  <link rel="icon" type="image/x-icon" href="/img/Logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-900">
+
+  <!----------------------------------------------------- NAVBAR SECTION ---------------------------------------------------------->
+  <nav class="navbar-modern fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center space-x-3">
+            <img src="/img/Logo.png" class="h-8 w-8" alt="P.H.A Logo" />
+            <div class="changa-one-no-bold">
+              <span class="text-xl font-bold text-white">P.H.A</span>
+              <span class="text-lg text-orange-500 font-semibold ml-1">Edu <b style="color: #0edaea;">Tech</b></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+              <i class="fas fa-home mr-2"></i>Inicio
+            </a>
+            <a href="index.html#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+              <i class="fas fa-users mr-2"></i>Nosotros
+            </a>
+            <a href="index.html#servicios" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+              <i class="fas fa-cogs mr-2"></i>Servicios
+            </a>
+            <a href="index.html#seminarios2" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+              <i class="fas fa-graduation-cap mr-2"></i>Seminarios
+            </a>
+            <a href="blog.html" class="text-cyan-400 bg-cyan-400/10 px-3 py-2 rounded-md text-sm font-medium border border-cyan-400/20">
+              <i class="fas fa-blog mr-2"></i>Blog
+            </a>
+            <a href="index.html#profesores" class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:from-orange-600 hover:to-yellow-600 transition-all duration-200">
+              <i class="fas fa-user-plus mr-2"></i>Únete al Staff
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" id="mobile-menu-button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900/95 backdrop-blur-md">
+        <a href="index.html" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          <i class="fas fa-home mr-2"></i>Inicio
+        </a>
+        <a href="index.html#about" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          <i class="fas fa-users mr-2"></i>Nosotros
+        </a>
+        <a href="index.html#servicios" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          <i class="fas fa-cogs mr-2"></i>Servicios
+        </a>
+        <a href="index.html#seminarios2" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          <i class="fas fa-graduation-cap mr-2"></i>Seminarios
+        </a>
+        <a href="blog.html" class="text-cyan-400 bg-cyan-400/10 block px-3 py-2 rounded-md text-base font-medium border border-cyan-400/20">
+          <i class="fas fa-blog mr-2"></i>Blog
+        </a>
+        <a href="index.html#profesores" class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white block px-3 py-2 rounded-md text-base font-medium">
+          <i class="fas fa-user-plus mr-2"></i>Únete al Staff
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!----------------------------------------------------- NAVBAR END SECTION ---------------------------------------------------------->
+
+  <main>
+    <!----------------------------------------------------- BLOG HERO SECTION ---------------------------------------------------------->
+    <section class="relative bg-gradient-to-br from-slate-900 to-blue-950 py-20 pt-32 overflow-hidden">
+      <!-- Animated Background Elements -->
+      <div class="absolute inset-0">
+        <div class="absolute top-10 left-10 w-32 h-32 bg-cyan-400/10 rounded-full animate-float-slow"></div>
+        <div class="absolute bottom-20 right-20 w-24 h-24 bg-indigo-500/15 rounded-full animate-float-medium"></div>
+        <div class="absolute top-1/3 left-1/4 w-40 h-40 bg-slate-800/20 rounded-full animate-float-fast"></div>
+        <div class="absolute bottom-10 left-1/3 w-16 h-16 bg-cyan-400/8 rounded-full animate-pulse-glow"></div>
+        
+        <!-- Geometric Patterns -->
+        <div class="absolute top-20 right-1/4 w-8 h-8 bg-cyan-400/20 transform rotate-45 animate-twinkle"></div>
+        <div class="absolute bottom-32 right-1/3 w-12 h-12 border-2 border-indigo-500/20 rounded-full animate-spin-slow"></div>
+        <div class="absolute top-1/2 left-20 w-6 h-16 bg-gradient-to-t from-cyan-400/10 to-indigo-500/10 transform rotate-30 animate-sway"></div>
+      </div>
+
+      <div class="container mx-auto px-4 max-w-7xl text-center relative z-10">
+        <div class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-cyan-400/20 rounded-full mb-8 hover:bg-white/15 transition-all duration-300">
+          <i class="fas fa-blog text-cyan-400 mr-3"></i>
+          <span class="text-white font-semibold">Conocimiento y Actualidad</span>
+        </div>
+        <h1 class="changa-one-no-bold text-5xl md:text-7xl font-extrabold text-white mb-6">
+          Nuestro <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500">Blog</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 leading-relaxed max-w-4xl mx-auto">
+          Descubre artículos, tutoriales y noticias sobre las últimas tendencias en tecnología y desarrollo.
+          Mantente al día con las mejores prácticas y herramientas del mundo tech.
+        </p>
+      </div>
+    </section>
+    <!----------------------------------------------------- BLOG HERO END SECTION ---------------------------------------------------------->
+
+    <!----------------------------------------------------- BLOG CONTENT SECTION ---------------------------------------------------------->
+    <section id="blog" class="relative py-16 bg-gradient-to-br from-slate-50 to-cyan-50 overflow-hidden">
+      <!-- Animated Background Elements -->
+      <div class="absolute inset-0">
+        <div class="absolute top-20 left-1/4 w-20 h-20 bg-cyan-400/5 rounded-full animate-float-slow"></div>
+        <div class="absolute bottom-32 right-1/3 w-16 h-16 bg-indigo-500/8 rounded-full animate-float-medium"></div>
+        <div class="absolute top-1/2 right-20 w-12 h-12 bg-slate-900/5 rounded-full animate-float-fast"></div>
+      </div>
+
+      <div class="container mx-auto px-4 max-w-7xl relative z-10">
+        <!-- Featured Article -->
+        <div class="mt-6 mb-10">
+          <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-cyan-100/50">
+            <div class="grid lg:grid-cols-2 gap-0">
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://img.freepik.com/vector-gratis/concepto-desarrollo-web-programador-ar_107791-17049.jpg?t=st=1760482398~exp=1760485998~hmac=1f1c1377b09ee13c30ef5ef5cfcd3233279ddca383b7bd615d7af22f4135cff4&w=1480"
+                  alt="Artículo destacado"
+                  class="w-full h-200 lg:h-full object-cover hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-4 left-5">
+                  <span class="bg-gradient-to-r from-cyan-400 to-indigo-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Destacado
+                  </span>
+                </div>
+              </div>
+              <div class="p-8 lg:p-12 flex flex-col justify-center">
+                <div class="flex items-center gap-4 mb-4">
+                  <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-medium">
+                    Python
+                  </span>
+                  <span class="text-gray-500 text-sm">15 Oct 2025</span>
+                </div>
+                <h3 class="text-2xl lg:text-3xl font-bold text-slate-900 mb-4">
+                  Introducción a Python: Tu primera puerta al mundo de la programación
+                </h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                  Descubre por qué Python se ha convertido en el lenguaje de programación más popular del mundo.
+                  Aprende los fundamentos y comienza tu viaje en el desarrollo de software.
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full flex items-center justify-center">
+                      <img src="/img/wes.jpg" alt="" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <div>
+                      <p class="font-semibold text-slate-900">Wilberd Espino</p>
+                      <p class="text-sm text-gray-500">Instructor Principal</p>
+                    </div>
+                  </div>
+                  <button class="bg-gradient-to-r from-cyan-400 to-indigo-500 hover:from-cyan-500 hover:to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2">
+                    Leer más
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Article 1 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-cyan-100/50">
+            <div class="relative overflow-hidden">
+              <img src="img/java.jpg" alt="Java Programming"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4">
+                <button class="w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                  <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs font-medium">Java</span>
+                <span class="text-gray-500 text-sm">12 Oct 2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
+                Fundamentos de Java: Programación Orientada a Objetos
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                Aprende los conceptos fundamentales de la programación orientada a objetos con Java.
+                Desde clases y objetos hasta herencia y polimorfismo.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">J</span>
+                  </div>
+                  <span class="text-sm text-gray-600">Java Team</span>
+                </div>
+                <span class="text-cyan-400 hover:text-cyan-500 cursor-pointer text-sm font-semibold">
+                  Leer más →
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-cyan-100/50">
+            <div class="relative overflow-hidden">
+              <img src="img/CSS.jpg" alt="Web Development"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4">
+                <button class="w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                  <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="bg-cyan-100 text-cyan-700 px-2 py-1 rounded-full text-xs font-medium">Web Dev</span>
+                <span class="text-gray-500 text-sm">10 Oct 2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
+                CSS Moderno: Flexbox y Grid Layout en 2025
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                Domina las técnicas modernas de CSS para crear layouts responsivos y atractivos.
+                Aprende Flexbox y CSS Grid desde cero.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 bg-cyan-400 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">W</span>
+                  </div>
+                  <span class="text-sm text-gray-600">Web Team</span>
+                </div>
+                <span class="text-cyan-400 hover:text-cyan-500 cursor-pointer text-sm font-semibold">
+                  Leer más →
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-cyan-100/50">
+            <div class="relative overflow-hidden">
+              <img src="img/ETHICAL HACKING.jpg" alt="Ethical Hacking"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4">
+                <button class="w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                  <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-full text-xs font-medium">Seguridad</span>
+                <span class="text-gray-500 text-sm">8 Oct 2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
+                Ethical Hacking: Protege tu Sistema desde Adentro
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                Descubre las técnicas de hacking ético y cómo utilizarlas para fortalecer
+                la seguridad de sistemas y aplicaciones.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 bg-slate-700 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">S</span>
+                  </div>
+                  <span class="text-sm text-gray-600">Security Team</span>
+                </div>
+                <span class="text-cyan-400 hover:text-cyan-500 cursor-pointer text-sm font-semibold">
+                  Leer más →
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-cyan-100/50">
+            <div class="relative overflow-hidden">
+              <img src="img/bbdd (2).jpg" alt="Database Management"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4">
+                <button class="w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                  <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs font-medium">Bases de Datos</span>
+                <span class="text-gray-500 text-sm">5 Oct 2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
+                Diseño de Bases de Datos: Mejores Prácticas
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                Aprende a diseñar bases de datos eficientes y escalables. Desde la normalización
+                hasta la optimización de consultas.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">D</span>
+                  </div>
+                  <span class="text-sm text-gray-600">Data Team</span>
+                </div>
+                <span class="text-cyan-400 hover:text-cyan-500 cursor-pointer text-sm font-semibold">
+                  Leer más →
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-cyan-100/50">
+            <div class="relative overflow-hidden">
+              <img src="img/powerbi (2).jpg" alt="Business Intelligence"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4">
+                <button class="w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                  <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs font-medium">Power BI</span>
+                <span class="text-gray-500 text-sm">3 Oct 2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
+                Power BI: Visualización de Datos Avanzada
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                Crea dashboards interactivos y reportes profesionales con Power BI.
+                Transforma datos en insights accionables.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">B</span>
+                  </div>
+                  <span class="text-sm text-gray-600">BI Team</span>
+                </div>
+                <span class="text-cyan-400 hover:text-cyan-500 cursor-pointer text-sm font-semibold">
+                  Leer más →
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-cyan-100/50">
+            <div class="relative overflow-hidden">
+              <img src="img/languages.jpg" alt="Programming Languages"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4">
+                <button class="w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                  <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="bg-cyan-100 text-cyan-700 px-2 py-1 rounded-full text-xs font-medium">Tendencias</span>
+                <span class="text-gray-500 text-sm">1 Oct 2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
+                Los Lenguajes de Programación más Demandados en 2025
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                Descubre cuáles son los lenguajes de programación con mayor demanda en el mercado
+                laboral actual y las tendencias emergentes.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 bg-cyan-400 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">T</span>
+                  </div>
+                  <span class="text-sm text-gray-600">Trends Team</span>
+                </div>
+                <span class="text-cyan-400 hover:text-cyan-500 cursor-pointer text-sm font-semibold">
+                  Leer más →
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="relative bg-gradient-to-r from-slate-900 to-cyan-600 rounded-3xl p-8 mb-8 overflow-hidden">
+          <!-- Animated Background -->
+          <div class="absolute inset-0">
+            <div class="absolute top-4 right-8 w-16 h-16 bg-cyan-400/10 rounded-full animate-float-slow"></div>
+            <div class="absolute bottom-6 left-12 w-12 h-12 bg-indigo-500/15 rounded-full animate-float-medium"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6 items-center relative z-10">
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2">¿Quieres estar al día?</h4>
+              <p class="text-gray-300">Suscríbete a nuestro newsletter y recibe las últimas noticias sobre tecnología y nuestros seminarios.</p>
+            </div>
+            <div class="flex space-x-3">
+              <input type="email" placeholder="Tu email aquí..." 
+                     class="flex-1 px-4 py-3 bg-white/10 border border-cyan-400/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent backdrop-blur-sm">
+              <button class="px-6 py-3 bg-gradient-to-r from-cyan-400 to-indigo-500 hover:from-cyan-500 hover:to-indigo-600 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Top -->
+        <div class="mt-20 text-center">
+          <a href="#navbar"
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-500 hover:from-cyan-700 hover:to-blue-600 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <i class="fas fa-home mr-3"></i>
+            Volver al Inicio
+          </a>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------------------- BLOG CONTENT END SECTION ---------------------------------------------------------->
+  </main>
+
+  <!----------------------------------------------------- FOOTER SECTION ---------------------------------------------------------->
+  <footer class="footer relative bg-gradient-to-r from-gray-900 to-cyan-400 overflow-hidden">
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0">
+      <div class="absolute top-10 left-10 w-32 h-32 bg-orange-300/10 rounded-full animate-blob"></div>
+      <div class="absolute bottom-10 right-20 w-24 h-24 bg-blue-300/10 rounded-full animate-blob animation-delay-2000"></div>
+      <div class="absolute top-1/2 left-1/3 w-40 h-40 bg-indigo-500/10 rounded-full animate-blob animation-delay-4000"></div>
+      <div class="absolute top-10 right-20 w-32 h-32 bg-purple-800/10 rounded-full animate-blob"></div>
+      
+      <!-- Additional Geometric Patterns -->
+      <div class="absolute top-20 left-1/4 w-8 h-8 bg-cyan-400/15 transform rotate-45"></div>
+      <div class="absolute bottom-32 left-1/2 w-12 h-12 border-2 border-white/10 rounded-full"></div>
+      <div class="absolute top-1/3 right-1/4 w-6 h-16 bg-gradient-to-t from-blue-400/10 to-purple-400/10 transform rotate-30"></div>
+      <div class="absolute bottom-20 left-20 w-16 h-4 bg-gradient-to-r from-orange-400/15 to-pink-400/15 transform -rotate-12"></div>
+      <svg class="absolute top-1/4 left-1/6 w-10 h-10 text-white/8" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+      </svg>
+      <div class="absolute bottom-40 right-1/3 w-14 h-14 bg-yellow-400/10 transform rotate-45"></div>
+      <div class="absolute top-40 left-2/3 w-3 h-12 bg-gradient-to-b from-green-400/10 to-blue-400/10 transform rotate-60"></div>
+
+    </div>
+
+    <div class="container mx-auto px-4 max-w-7xl relative z-10 py-16">
+      <!-- Main Footer Content -->
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
+        
+        <!-- Company Info -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center mb-6">
+            <img src="/img/Logo.png" class="h-12 w-12 mr-3" alt="P.H.A Logo" />
+            <div class="changa-one-no-bold">
+              <h3 class="text-2xl font-bold text-white">P.H.A</h3>
+              <span class="text-lg text-orange-500 font-semibold">Edu <b style="color: #0edaea;">Tech</b></span>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Transformando vidas a través de la educación tecnológica. Formamos profesionales preparados para el futuro digital.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-6">Enlaces Rápidos</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="index.html#about" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 flex items-center group">
+                <i class="fas fa-chevron-right text-cyan-400-custom text-sm mr-2 group-hover:translate-x-1 transition-transform"></i>
+                Acerca de Nosotros
+              </a>
+            </li>
+            <li>
+              <a href="index.html#seminarios2" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 flex items-center group">
+                <i class="fas fa-chevron-right text-cyan-400-custom text-sm mr-2 group-hover:translate-x-1 transition-transform"></i>
+                Seminarios One Class
+              </a>
+            </li>
+            <li>
+              <a href="index.html#servicios" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 flex items-center group">
+                <i class="fas fa-chevron-right text-cyan-400-custom text-sm mr-2 group-hover:translate-x-1 transition-transform"></i>
+                Nuestros Servicios
+              </a>
+            </li>
+            <li>
+              <a href="blog.html" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 flex items-center group">
+                <i class="fas fa-chevron-right text-cyan-400-custom text-sm mr-2 group-hover:translate-x-1 transition-transform"></i>
+                Blog Tecnológico
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Seminarios -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-6">Seminarios Populares</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors duration-300 flex items-center group">
+                <i class="fas fa-code text-orange-400 text-sm mr-2"></i>
+                Desarrollo Web
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                <i class="fab fa-python text-yellow-400 text-sm mr-2"></i>
+                Python Programming
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-red-400 transition-colors duration-300 flex items-center group">
+                <i class="fab fa-java text-red-400 text-sm mr-2"></i>
+                Java Development
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-green-400 transition-colors duration-300 flex items-center group">
+                <i class="fas fa-shield-alt text-green-400 text-sm mr-2"></i>
+                Ethical Hacking
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 flex items-center group">
+                <i class="fas fa-chart-bar text-purple-400 text-sm mr-2"></i>
+                Power BI & Analytics
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-6">Contacto</h4>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <i class="fas fa-phone text-cyan-400-custom text-lg mt-1"></i>
+              <div>
+                <p class="text-gray-300 text-sm">Teléfono</p>
+                <p class="text-white font-semibold">+51 953 508 892</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <i class="fas fa-envelope text-cyan-400-custom text-lg mt-1"></i>
+              <div>
+                <p class="text-gray-300 text-sm">Email</p>
+                <p class="text-white font-semibold">phaedutech@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <i class="fa-solid fa-share-nodes text-cyan-400-custom text-lg mt-1"></i>
+              <div>
+                <p class="text-gray-300 text-sm">Redes Sociales</p>
+                <div class="flex space-x-4 mt-2">
+                  <a href="https://www.tiktok.com/@cz.hector" target="_blank" 
+                  class="w-10 h-16 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                    <i class="fab fa-tiktok text-white text-lg"></i>
+                  </a>
+                  <a href="#" class="w-10 h-16 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                    <i class="fab fa-linkedin text-blue-400 text-lg"></i>
+                  </a>
+                  <a href="#" class="w-10 h-16 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                    <i class="fab fa-instagram text-pink-400 text-lg"></i>
+                  </a>
+                  <a href="#" class="w-10 h-16 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                    <i class="fa-brands fa-facebook text-blue-500 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div  class="bottom-bar border-t pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div class="text-gray-200 text-sm">
+            © 2025 <span class="text-white font-semibold">P.H.A EduTech™</span>. Todos los Derechos Reservados.
+          </div>
+          <div class="flex space-x-6 text-sm">
+            <a href="#" class="text-gray-200 hover:text-white transition-colors"><i class="fa-solid fa-shield-halved"></i> Política de Privacidad</a>
+            <a href="#" class="text-gray-200 hover:text-white transition-colors"><i class="fa-solid fa-scale-balanced"></i> Términos de Servicio</a>
+            <a href="#" class="text-gray-200 hover:text-white transition-colors"><i class="fa-solid fa-user-secret"></i> FAQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!----------------------------------------------------- FOOTER END SECTION ---------------------------------------------------------->
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  <script src="script.js"></script>
+  
+  <!-- Mobile Menu Script -->
+  <script>
+    // Mobile menu functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

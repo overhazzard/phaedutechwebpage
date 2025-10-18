@@ -1,0 +1,2093 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>P.H.A EduTech | Seminarios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="icon" type="image/png" href="/img/Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b0d81bfe61.js"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  </head>
+
+  <body>
+    <!----------------------------------------------------- NAVBAR SECTION ---------------------------------------------------------->
+    <nav
+      class="nav bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#inicio"
+          class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/img/Logo.png" style="width: 50px; height: 50px;"
+            class=" h-8" alt="P.H.A Logo" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white inter-title"
+            style="color: #010147;">P.H.A <b style="color: #0edaea;">Edu</b><b
+              style="color: #010147;">Tech</b></span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button style="cursor: pointer;"
+            data-modal-target="authentication-modal"
+            data-modal-toggle="authentication-modal" type="button"
+            class="button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Inscribirme
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </button>
+          <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-blue-500 rounded-lg md:hidden hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            <span class="sr-only">Abrir MENU</span>
+            <svg class="w-5 h-5" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="3"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="items-center justify-between w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky">
+          <ul
+            class="ul-nav flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#inicio"
+                class="a-nav block py-2 px-3 md:p-0 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500">
+                Inicio</a>
+            </li>
+            <li>
+              <a href="#seminarios"
+                class="a-nav block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                Seminarios</a>
+            </li>
+            <li>
+              <a href="#servicios"
+                class="a-nav block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                Servicios</a>
+            </li>
+            <li>
+              <a href="#"
+                class="a-nav block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!----------------------------------------------------- NAVBAR END SECTION ---------------------------------------------------------->
+
+    <main>
+
+      <!----------------------------------------------------- BANNER ABAJO SECTION ---------------------------------------------------------->
+      <div id="bottom-banner" tabindex="-1"
+        class="fixed bottom-0 start-0 z-50 flex justify-between w-full p-4 border-t border-blue-600 bg-blue-50 dark:bg-gray-700 dark:border-gray-600">
+        <div class="flex items-center mx-auto">
+          <p
+            class="flex items-center text-sm font-normal text-black dark:text-gray-400">
+            <span
+              class="inline-flex p-1 me-3 bg-gray-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center">
+              <svg class="w-3.5 h-3.5 text-blue-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  d="M18.435 7.546A2.32 2.32 0 0 1 17.7 5.77a3.354 3.354 0 0 0-3.47-3.47 2.322 2.322 0 0 1-1.776-.736 3.357 3.357 0 0 0-4.907 0 2.281 2.281 0 0 1-1.776.736 3.414 3.414 0 0 0-2.489.981 3.372 3.372 0 0 0-.982 2.49 2.319 2.319 0 0 1-.736 1.775 3.36 3.36 0 0 0 0 4.908A2.317 2.317 0 0 1 2.3 14.23a3.356 3.356 0 0 0 3.47 3.47 2.318 2.318 0 0 1 1.777.737 3.36 3.36 0 0 0 4.907 0 2.36 2.36 0 0 1 1.776-.737 3.356 3.356 0 0 0 3.469-3.47 2.319 2.319 0 0 1 .736-1.775 3.359 3.359 0 0 0 0-4.908ZM8.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm3 9.063a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm2.207-6.856-6 6a1 1 0 0 1-1.414-1.414l6-6a1 1 0 0 1 1.414 1.414Z" />
+              </svg>
+              <span class="sr-only">Descuento</span>
+            </span>
+            <span>¡No pierdas la oportunidad de resaltar en el mundo laboral! <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=51953508892&text=%C2%A1Hola%20me%20encuentro%20interesad@%20en%20las%20SERVICIOS%20QUE%20OFRECEN!"
+                class="flex items-center ms-0 text-sm font-medium text-blue-600 md:ms-1 md:inline-flex dark:text-blue-500 hover:underline">Contactar
+                por Whatsapp <svg class="w-3 h-3 ms-2 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg></a></span>
+          </p>
+        </div>
+        <div class="flex items-center">
+          <button data-dismiss-target="#bottom-banner" type="button"
+            class="shrink-0 inline-flex justify-center w-7 h-7 items-center text-blue-900 hover:bg-blue-200 hover:text-blue-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close banner</span>
+          </button>
+        </div>
+      </div>
+      <!----------------------------------------------------- BANNER ABAJO END SECTION ---------------------------------------------------------->
+
+      <!----------------------------------------------------- LANDING SECTION ---------------------------------------------------------->
+      <!----------------------------------------------------- LANDING END SECTION ---------------------------------------------------------->
+      <!----------------------------------------------------- CARRUSEL SECTION ---------------------------------------------------------->
+
+
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative overflow-hidden h-screen">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <section
+              class="bg-center bg-no-repeat bg-cover bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply flex items-center justify-center h-full"
+              id="seminarios">
+              <div class="px-4 mx-auto max-w-screen-xl text-center">
+                <a href="#seminarios2"
+                  class="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
+                  <span
+                    class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">Nuevo</span>
+                  <span class="text-sm font-medium"><b>¡OFERTA!</b> ¡El 4to
+                    seminario es <b>GRATIS</b>! (Solo inscripción vía
+                    <b>WEB</b>)</span>
+                  <svg class="w-2.5 h-2.5 ms-2 rtl:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2"
+                      d="m1 9 4-4-4-4" />
+                  </svg>
+                </a>
+                <h1
+                  class="inter-title mb-4 text-3xl font-extrabold text-white md:text-5xl lg:text-6xl">
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">APRENDE
+                    PROGRAMACIÓN DESDE 0</span> CON SEMINARIOS, TALLERES Y
+                  ASESORÍAS
+                </h1>
+                <p
+                  class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                  Seminarios prácticos y de corta duración, con clases en vivo y
+                  material de apoyo exclusivo. Perfectos para estudiantes,
+                  principiantes y entusiastas que desean dar sus primeros pasos
+                  en el mundo tecnológico y comenzar a construir su carrera.
+                </p>
+                <div
+                  class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                  <a href="#seminarios2"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    ¡Comienza Ahora!
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                  </a>
+                  <a href="#"
+                    class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Más información
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- Item 2 -->
+
+          <!-- Item 3 -->
+
+          <!-- Item 4 -->
+
+          <!-- Item 5 -->
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true"
+            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full"
+            aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full"
+            aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full"
+            aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full"
+            aria-current="false" aria-label="Slide 5"
+            data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+
+      <!----------------------------------------------------- CARRUSEL END SECTION ---------------------------------------------------------->
+
+      <hr
+        class="w-48 h-1 mx-auto my-4 bg-blue-900 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+
+      <div
+        class="container w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <div class="sm:hidden">
+          <label for="tabs" class="sr-only">Select tab</label>
+          <select id="tabs"
+            class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option>Statistics</option>
+            <option>Services</option>
+            <option>FAQ</option>
+          </select>
+        </div>
+        <ul
+          class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+          id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent"
+          role="tablist">
+          <li class="w-full">
+            <button id="stats-tab" data-tabs-target="#stats" type="button"
+              role="tab" aria-controls="stats" aria-selected="true"
+              class="inline-block w-full p-4 rounded-ss-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Statistics</button>
+          </li>
+          <li class="w-full">
+            <button id="about-tab" data-tabs-target="#about" type="button"
+              role="tab" aria-controls="about" aria-selected="false"
+              class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Services</button>
+          </li>
+          <li class="w-full">
+            <button id="faq-tab" data-tabs-target="#faq" type="button"
+              role="tab" aria-controls="faq" aria-selected="false"
+              class="inline-block w-full p-4 rounded-se-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">FAQ</button>
+          </li>
+        </ul>
+        <div id="fullWidthTabContent"
+          class="border-t border-gray-200 dark:border-gray-600">
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="stats" role="tabpanel" aria-labelledby="stats-tab">
+            <dl
+              class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl font-extrabold">73M+</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Developers</dd>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl font-extrabold">100M+</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Public
+                  repositories</dd>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl font-extrabold">1000s</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Open source
+                  projects</dd>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl font-extrabold">1B+</dt>
+                <dd
+                  class="text-gray-500 dark:text-gray-400">Contributors</dd>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl font-extrabold">90+</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Top Forbes
+                  companies</dd>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl font-extrabold">4M+</dt>
+                <dd
+                  class="text-gray-500 dark:text-gray-400">Organizations</dd>
+              </div>
+            </dl>
+          </div>
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="about" role="tabpanel" aria-labelledby="about-tab">
+            <h2
+              class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">We
+              invest in the world’s potential</h2>
+            <!-- List -->
+            <ul role="list"
+              class="space-y-4 text-gray-500 dark:text-gray-400">
+              <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                <svg
+                  class="shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                  aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                </svg>
+                <span class="leading-tight">Dynamic reports and
+                  dashboards</span>
+              </li>
+              <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                <svg
+                  class="shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                  aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                </svg>
+                <span class="leading-tight">Templates for everyone</span>
+              </li>
+              <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                <svg
+                  class="shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                  aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                </svg>
+                <span class="leading-tight">Development workflow</span>
+              </li>
+              <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                <svg
+                  class="shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                  aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                </svg>
+                <span class="leading-tight">Limitless business
+                  automation</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hidden p-4 bg-white rounded-lg dark:bg-gray-800"
+            id="faq" role="tabpanel" aria-labelledby="faq-tab">
+            <div id="accordion-flush" data-accordion="collapse"
+              data-active-classes="bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+              data-inactive-classes="text-gray-500 dark:text-gray-400">
+              <h2 id="accordion-flush-heading-1">
+                <button type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-flush-body-1">
+                  <span>What is Flowbite?</span>
+                  <svg data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-flush-body-1" class="hidden"
+                aria-labelledby="accordion-flush-heading-1">
+                <div
+                  class="py-5 border-b border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite
+                    is an open-source library of interactive components
+                    built on top of Tailwind CSS including buttons,
+                    dropdowns, modals, navbars, and more.</p>
+                  <p class="text-gray-500 dark:text-gray-400">Check out this
+                    guide to learn how to <a
+                      href="/docs/getting-started/introduction/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline">get
+                      started</a> and start developing websites even faster
+                    with components on top of Tailwind CSS.</p>
+                </div>
+              </div>
+              <h2 id="accordion-flush-heading-2">
+                <button type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-2">
+                  <span>Is there a Figma file available?</span>
+                  <svg data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-flush-body-2" class="hidden"
+                aria-labelledby="accordion-flush-heading-2">
+                <div
+                  class="py-5 border-b border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite
+                    is first conceptualized and designed using the Figma
+                    software so everything you see in the library has a
+                    design equivalent in our Figma file.</p>
+                  <p class="text-gray-500 dark:text-gray-400">Check out the
+                    <a href="https://flowbite.com/figma/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline">Figma
+                      design system</a> based on the utility classes from
+                    Tailwind CSS and components from Flowbite.</p>
+                </div>
+              </div>
+              <h2 id="accordion-flush-heading-3">
+                <button type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-3">
+                  <span>What are the differences between Flowbite and
+                    Tailwind UI?</span>
+                  <svg data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-flush-body-3" class="hidden"
+                aria-labelledby="accordion-flush-heading-3">
+                <div
+                  class="py-5 border-b border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">The main
+                    difference is that the core components from Flowbite are
+                    open source under the MIT license, whereas Tailwind UI
+                    is a paid product. Another difference is that Flowbite
+                    relies on smaller and standalone components, whereas
+                    Tailwind UI offers sections of pages.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">However,
+                    we actually recommend using both Flowbite, Flowbite Pro,
+                    and even Tailwind UI as there is no technical reason
+                    stopping you from using the best of two worlds.</p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">Learn
+                    more about these technologies:</p>
+                  <ul
+                    class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://flowbite.com/pro/"
+                        class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                        Pro</a></li>
+                    <li><a href="https://tailwindui.com/" rel="nofollow"
+                        class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind
+                        UI</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr
+      class="w-48 h-1 mx-auto my-4 bg-blue-900 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+
+    <!----------------------------------------------------- SEMINARIOS SECTION ---------------------------------------------------------->
+    <section class="seminarios bg-gray-700 bg-blend-multiply">
+      <div class="container">
+        <h1 id="element2"
+          class="card-title text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          style="font-size: 50px;background-color:#010147; color:#ffffff;">Descubre
+          los seminarios
+          <mark
+            class="px-2 text-white bg-blue-600 rounded-sm dark:bg-blue-500 bg-gradient-to-r to-blue-600 from-blue-900">disponibles</mark>
+        </h1>
+        <figure class="max-w-screen-md mx-auto text-center">
+        </div>
+
+        <div
+          class="container flex items-center p-4 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-100 mx-6"
+          role="alert">
+          <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm.75 14.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.25 6a.75.75 0 0 1 1.5 0v5a.75.75 0 0 1-1.5 0Z" />
+          </svg>
+          <span class="font-medium"><b>Requisitos:</b> Computadora
+            o laptop,
+            conexión a internet y ganas de aprender 🚀
+          </span>
+        </div>
+
+        <!-- CARDS SEMINARIOS -->
+        <section
+          class="card-section container py-12 px-6 grid md:grid-cols-3 gap-6">
+          <div
+            class="card-itm max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+            <img class="rounded-t-lg" src="/img/powerbi (2).jpg" alt>
+            <div class="p-5">
+              <h5
+                class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">One
+                Class de Power BI</h5>
+              <p class="text-center mb-3 font-normal text-gray-700">Aprende
+                desde cero a
+                crear paneles dinámicos y
+                reportes visuales estructurados que transforman datos en
+                decisiones inteligentes.
+              </p>
+              <div class="items-center text-center">
+                <button
+                  data-modal-target="authentication-modal2"
+                  data-modal-toggle="authentication-modal2"
+                  style="cursor: pointer;" type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Inscribirme <i class="fa-solid fa-code"></i>
+                </button>
+                <button data-tooltip-target="tooltip-default"
+                  data-modal-target="timeline-modal"
+                  data-modal-toggle="timeline-modal"
+                  style="cursor: pointer;"
+                  type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Temario <i class="fa-solid fa-download"></i>
+                </button>
+                <div id="tooltip-default" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                  ¡Click para más información!
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-itm max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+            <img class="rounded-t-lg" src="/img/java.jpg" alt>
+            <div class="p-5">
+              <h5
+                class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">One
+                Class de Java</h5>
+              <p class="text-center mb-3 font-normal text-gray-700">Aprende
+                desde cero a
+                programar en Java y
+                desarrolla aplicaciones potentes, estructuradas y seguras
+                para cualquier entorno profesional.
+              </p>
+              <div class="items-center text-center">
+                <button data-modal-target="authentication-modal3"
+                  data-modal-toggle="authentication-modal3"
+                  style="cursor: pointer;" type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Inscribirme <i class="fa-solid fa-code"></i>
+                </button>
+                <button data-tooltip-target="tooltip-default"
+                  data-modal-target="timeline-modal"
+                  data-modal-toggle="timeline-modal"
+                  style="cursor: pointer;"
+                  type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Temario <i class="fa-solid fa-download"></i>
+                </button>
+                <div id="tooltip-default" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                  ¡Click para más información!
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-itm max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+            <img class="rounded-t-lg" src="/img/python.jpg" alt>
+            <div class="p-5">
+              <h5
+                class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">One
+                Class de Python</h5>
+              <p class="text-center mb-3 font-normal text-gray-700">Aprende
+                desde cero a
+                programar en Python y
+                domina el lenguaje más versátil para análisis de datos,
+                automatización y desarrollo web.
+              </p>
+              <div class="items-center text-center">
+                <button data-modal-target="authentication-modal4"
+                  data-modal-toggle="authentication-modal4"
+                  style="cursor: pointer;" type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Inscribirme <i class="fa-solid fa-code"></i>
+                </button>
+                <button data-tooltip-target="tooltip-default"
+                  data-modal-target="timeline-modal"
+                  data-modal-toggle="timeline-modal"
+                  style="cursor: pointer;"
+                  type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Temario <i class="fa-solid fa-download"></i>
+                </button>
+                <div id="tooltip-default" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                  ¡Click para más información!
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-itm max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+            <img class="rounded-t-lg" src="/img/bbdd (2).jpg" alt>
+            <div class="p-5">
+              <h5
+                class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">One
+                Class de Base de Datos y SQL</h5>
+              <p class="text-center mb-3 font-normal text-gray-700">Aprende
+                desde cero a
+                crear y gestionar bases de
+                datos con SQL, organizando la información de forma eficiente
+                y profesinal.
+              </p>
+              <div class="items-center text-center">
+                <button data-modal-target="authentication-modal5"
+                  data-modal-toggle="authentication-modal5"
+                  style="cursor: pointer;" type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Inscribirme <i class="fa-solid fa-code"></i>
+                </button>
+                <button data-tooltip-target="tooltip-default"
+                  data-modal-target="timeline-modal"
+                  data-modal-toggle="timeline-modal"
+                  style="cursor: pointer;"
+                  type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Temario <i class="fa-solid fa-download"></i>
+                </button>
+                <div id="tooltip-default" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                  ¡Click para más información!
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-itm max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+            <img class="rounded-t-lg" src="/img/ETHICAL HACKING.jpg" alt>
+            <div class="p-5">
+              <h5
+                class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">One
+                Class de Ethical Hacking</h5>
+              <p class="text-center mb-3 font-normal text-gray-700">Aprende
+                desde cero a
+                identificar vulnerabilidades,
+                explorar fallas y proteger sistemas ante ataques éticos y
+                reales.
+              </p>
+              <div class="items-center text-center">
+                <button data-modal-target="authentication-modal6"
+                  data-modal-toggle="authentication-modal6"
+                  style="cursor: pointer;" type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Inscribirme <i class="fa-solid fa-code"></i>
+                </button>
+                <button data-tooltip-target="tooltip-default"
+                  data-modal-target="timeline-modal"
+                  data-modal-toggle="timeline-modal"
+                  style="cursor: pointer;"
+                  type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Temario <i class="fa-solid fa-download"></i>
+                </button>
+                <div id="tooltip-default" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                  ¡Click para más información!
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-itm max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+            <img class="rounded-t-lg" src="/img/CSS.jpg" alt>
+            <div class="p-5">
+              <h5
+                class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">One
+                Class de Desarrollo Web</h5>
+              <p class="text-center mb-3 font-normal text-gray-700">Aprende
+                desde cero a
+                construir sitios web
+                interactivos, agregando íconos, Bootstrap y publicándolos en
+                internet paso a paso.
+              </p>
+              <div class="items-center text-center">
+                <button data-modal-target="authentication-modal7"
+                  data-modal-toggle="authentication-modal7"
+                  style="cursor: pointer;" type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Inscribirme <i class="fa-solid fa-code"></i>
+                </button>
+                <button data-tooltip-target="tooltip-default"
+                  data-modal-target="timeline-modal"
+                  data-modal-toggle="timeline-modal"
+                  style="cursor: pointer;"
+                  type="button"
+                  class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Temario <i class="fa-solid fa-download"></i>
+                </button>
+                <div id="tooltip-default" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                  ¡Click para más información!
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <!----------------------------------------------------- SEMINARIOS END SECTION ---------------------------------------------------------->
+
+      <hr
+        class="w-48 h-1 mx-auto my-4 bg-blue-900 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+
+      <!----------------------------------------------------- OTROS SERVICIOS SECTION ---------------------------------------------------------->
+      <div class="div-otros-serv bg-gray-800 bg-blend-multiply">
+        <section class="container" id="servicios">
+          <div class="py-8 px-4 mx-auto max-w-screen-xl">
+            <h1 id="element3"
+              class="card-title text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+              Soluciones y Formación
+              <mark
+                class="px-2 text-white bg-blue-600 rounded-sm dark:bg-blue-500 bg-gradient-to-r to-blue-600 from-blue-900">Digital</mark>
+            </h1>
+            <figure class="max-w-screen-md mx-auto text-center">
+            </div>
+            <div
+              class="card-itm servicios-section dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+              <a href="#"
+                class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
+                <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 20 16">
+                  <path stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"
+                    d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15" />
+                </svg>
+                Empresas
+              </a>
+              <h1
+                class="inter-title mb-4 text-3xl font-extrabold text-white dark:text-white md:text-5xl lg:text-3xl">
+                Creamos
+                sitios web
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+                  modernos, rápidos y personalizados
+
+                </h1>
+                <p style="font-weight: 500; text-align: justify;"
+                  class="text-lg font-normal text-white dark:text-gray-400 mb-6">Transformamos
+                  tus ideas en presencia digital. Diseñamos y desarrollamos
+                  páginas web adaptadas a tus necesidades, optimizadas para
+                  cualquier dispositivo y pensadas para destacar tu
+                  marca.</p>
+                <a href="#"
+                  class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                  ¡Quiero mi página web!
+                  <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div
+                  class="card-itm servicios-section dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+                  <a href="#"
+                    class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
+                    <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                      viewBox="0 0 18 18">
+                      <path
+                        d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
+                    </svg>
+                    Estudiantes
+                  </a>
+                  <h2
+                    class="text-white dark:text-white text-3xl font-extrabold mb-2">Aprende
+                    con guía experta y <span
+                      class="px-2 text-white bg-blue-600 rounded-sm dark:bg-blue-500">acompañamiento</span>
+                    constante</h2>
+                  <p style="font-weight: 500; text-align: justify;"
+                    class="text-lg font-normal text-white dark:text-gray-400 mb-4">Ofrecemos
+                    asesorías personalizadas en temas de programación,
+                    diseño
+                    web y desarrollo de proyectos académicos. Nuestro
+                    objetivo
+                    es ayudarte a comprender y aplicar los conceptos de
+                    forma
+                    práctica.</p>
+                  <a href="#"
+                    class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    ¡Quiero asesoría!
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                      aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="card-itm servicios-section dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+                  <a href="#"
+                    class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
+                    <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 20 16">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15" />
+                    </svg>
+                    Estudiantes
+                  </a>
+                  <h2
+                    class="text-white dark:text-white text-3xl font-extrabold mb-2">Te
+                    ayudamos a completar tus <mark
+                      class="px-2 text-white bg-blue-600 rounded-sm dark:bg-blue-500">proyectos
+                      con calidad y eficiencia</mark>
+                  </h2>
+                  <p style="font-weight: 500; text-align: justify;"
+                    class="text-lg font-normal text-white dark:text-gray-400 mb-4">Brindamos
+                    soporte profesional en la resolución de tareas y
+                    trabajos
+                    universitarios. Ya sea código, diseño o documentación,
+                    te
+                    ayudamos a cumplir con tus metas académicas o
+                    profesionales.</p>
+                  <a href="#"
+                    class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    ¡Quiero mi repaso!
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                      aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+    </div>
+            <!----------------------------------------------------- OTROS SERVICIOS END SECTION ---------------------------------------------------------->
+
+          </main>
+
+          <hr class="w-48 h-1 mx-auto my-4 bg-blue-900 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+
+          <!----------------------------------------------------- HERO SECTION ---------------------------------------------------------->
+          <section class="seccion-inicio bg-blue-900 bg-blend-multiply"
+            id="inicio">
+            <div
+              class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+              <h1 id="element"
+                class="name-presentation2 mb-4 text-4xl font-extrabold leading-none tracking-tight text-white-900 md:text-5xl lg:text-6xl dark:text-white">
+                Inversión
+                para tu <mark
+                  class="px-2 text-white bg-blue-600 rounded-sm dark:bg-blue-500">Futuro
+                  <i class="fa-solid fa-rocket"></i> </mark> </h1>
+              <figure class="max-w-screen-md mx-auto text-center">
+
+                <blockquote>
+                  <p
+                    class="text-2xl italic font-medium text-white dark:text-white">"El
+                    primer paso
+                    para entrar al mundo
+                    de la tecnología no es saberlo todo, es atreverse a empezar.
+                    ¿Estás listo para darlo con nosotros?"</p>
+                </blockquote>
+                <figcaption
+                  class="name-presentation flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                  <img class="w-7 h-7 rounded-full" src="/img/wes.jpg"
+                    alt="profile picture">
+                  <div
+                    class=" flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                    <cite
+                      class="pe-3 font-medium text-white dark:text-white">Wilberd
+                      Espino <a href="https://pe.linkedin.com/in/wespinog"
+                        target="_blank"><i class="fa-brands fa-linkedin"
+                          style="color: #0edaea;"></i></a></cite>
+                    <cite
+                      class="ps-3 text-sm text-white dark:text-gray-400">P.H.A
+                      EduTech Founder <i class="fa-solid fa-ghost"></i> </cite>
+                  </div>
+                </figcaption>
+              </figure> <br>
+              <div
+                class="flex flex-col lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                <button type="button"
+                  class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+                  <a href="#seminarios2">Ver Seminarios Disponibles <i
+                      class="fa-solid fa-circle-info"></i></a></button>
+                <button type="button"
+                  class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  style="color: #010147;">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=51953508892&text=%C2%A1Hola%20me%20encuentro%20interesad@%20en%20las%20ASESORÍAS%20PERSONALIZADAS!"
+                    target="_blank">Asesoría Personalizada <i
+                      class="fa-brands fa-whatsapp"></i></a></button>
+              </div>
+            </section>
+            <!----------------------------------------------------- HERO END SECTION ---------------------------------------------------------->
+
+            <!----------------------------------------------------- FOOTER SECTION ---------------------------------------------------------->
+            <footer
+              class="footer bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
+              <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                  <a href
+                    class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/img/Logo.png" class="h-8" alt="P.H.A Logo" />
+                    <span
+                      class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">P.H.A
+                      EduTech</span>
+                  </a>
+                  <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                      <a href="#" class="hover:underline me-4 md:me-6"><i
+                          class="fa-solid fa-circle-question"></i> Acerca
+                        de</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:underline me-4 md:me-6"><i
+                          class="fa-brands fa-tiktok"></i> TikTok</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:underline me-4 md:me-6"><i
+                          class="fa-solid fa-folder-plus"></i> Inscripción</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:underline"><i
+                          class="fa-solid fa-address-card"></i> Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+                <hr
+                  class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <span
+                  class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">©
+                  2025 <a href="https://flowbite.com/"
+                    class="hover:underline">PHA
+                    EduTech™</a>. Todos los Derechos Reservados.</span>
+              </div>
+            </footer>
+            <!----------------------------------------------------- FOOTER END SECTION ---------------------------------------------------------->
+
+            <!----------------------------------------------------- BOTÓN IR HACIA ARRIBA SECTION ---------------------------------------------------------->
+            <div data-dial-init class="fixed end-6 bottom-6 group">
+              <div id="speed-dial-menu-bottom-right"
+                class="flex flex-col items-center hidden mb-4 space-y-2">
+              </div>
+              <button type="button"
+                data-dial-toggle="speed-dial-menu-bottom-right"
+                aria-controls="speed-dial-menu-bottom-right"
+                aria-expanded="false"
+                class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+                <svg
+                  class="w-5 h-5 transition-transform group-hover:rotate-45"
+                  aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 18 18">
+                  <path stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"
+                    d="M9 1v16M1 9h16" />
+                </svg>
+                <span class="sr-only">Ir Arriba</span>
+              </button>
+            </div>
+            <!----------------------------------------------------- BOTÓN IR HACIA ARRIBA END SECTION ---------------------------------------------------------->
+
+            <!----------------------------------------------------- MODAL INSCRIPCIÓN SECTION ---------------------------------------------------------->
+            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-md max-h-full">
+                <!-- Modal content -->
+                <div
+                  class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div
+                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                    <h2
+                      class="text-xl font-bold text-gray-900 dark:text-white">
+                      ¡Regístrate en los Seminarios!
+                    </h2>
+                    <button type="button"
+                      class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                      data-modal-hide="authentication-modal">
+                      <svg class="w-3 h-3" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                      </svg>
+                      <span class="sr-only">Cerrar Modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="p-4 md:p-5">
+                    <form class="space-y-4 max-w-lg mx-auto"
+                      action="https://formspree.io/f/mqadojpp" method="POST">
+                      <div>
+                        <label for="password"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                          tu Nombre</label>
+                        <input type="text" name="text" id="text"
+                          placeholder="Ingresa tu nombre"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          required />
+                      </div>
+
+                      <div>
+                        <label for="email"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                          tu Email</label>
+                        <input type="email" name="email" id="email"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Ingresa tu emai" required />
+                      </div>
+
+                      <div class="col-span-2 sm:col-span-1">
+                        <label for="category"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Elige
+                          tu Seminario</label>
+                        <select id="category"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                          <option selected>Seleccionar</option>
+                          <option value="JV">Introducción a Java</option>
+                          <option value="PH">Introducción a Python</option>
+                          <option value="EH">Introducción al Ethical
+                            Hacking</option>
+                          <option value="DW">Introducción al Desarrollo
+                            Web</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          for="user_avatar">Insertar
+                          Captura de YAPE</label>
+                        <input
+                          class="block text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                          aria-describedby="user_avatar_help" id="user_avatar"
+                          type="file">
+                        <div
+                          class="mt-1 text-sm text-gray-500 dark:text-gray-300"
+                          id="user_avatar_help">Recuerda abonar el costo
+                          del seminario de tu elección al YAPE: Número
+                          953508892
+                          -
+                          Wilberd C. Espino G</div>
+                      </div>
+                      <button type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Enviar Inscripción</i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL INSCRIPCIÓN END SECTION ---------------------------------------------------------->
+
+          <!----------------------------------------------------- MODAL MÁS INFO SECTION ---------------------------------------------------------->
+          <div id="timeline-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              <!-- Modal content -->
+              <div
+                class="modal relative bg-white rounded-lg shadow-lg dark:bg-gray-700">
+                <!-- Modal header -->
+                <div style="background-color: var(--color-primario);"
+                  class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                  <h3 style="color: #ffffff;"
+                    class="text-lg font-semibold text-gray-900 dark:text-white">
+                    ¡Impulsa tu futuro <mark
+                      class="px-2 text-white bg-blue-600 rounded-sm dark:bg-blue-500">aquí!
+                      <i
+                        class="fa-solid fa-rocket"></i></mark>
+                  </h3>
+                  <button type="button"
+                    class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-toggle="timeline-modal">
+                    <svg class="w-3 h-3" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Cerrar modal</span>
+                  </button>
+                </div> <br>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <ol
+                    class="relative border-s border-blue-900 dark:border-gray-600 ms-3.5 mb-4 md:mb-5">
+                    <li class="mb-10 ms-8">
+                      <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600">
+                        <svg class="w-3.5 h-3.5 text-white dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z" />
+                        </svg>
+                      </span>
+
+                      <div class="card-container">
+                        <div class="card-content">
+                          <p class="title">Costo de Inversión</p>
+                          <p class="plain">
+                            <span>S/.25.00</span>
+                            <span>/ month</span>
+                          </p>
+                          <button class="card-btn">¡Inscribirme!</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mb-10 ms-8">
+                      <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600">
+                        <svg class="w-3.5 h-3.5 text-white dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z" />
+                        </svg>
+                      </span>
+                      <h3
+                        class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite
+                        Figma v2.8.0</h3>
+
+                      <p class="text-gray-500 dark:text-gray-400">
+                        Does your user know how to exit out of screens? Can
+                        they
+                        follow your intended user journey and buy
+                        something from the site you’ve designed? By running a
+                        usability test, you’ll be able to see how users
+                        will interact with your design once it’s live.
+                      </p>
+                      <blockquote
+                        class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
+                        <p
+                          class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"Flowbite
+                          is just
+                          awesome. It contains tons of predesigned components
+                          and
+                          pages starting from login screen to complex
+                          dashboard. Perfect choice for your next SaaS
+                          application."</p>
+                      </blockquote>
+
+                      <h2
+                        class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password
+                        requirements:</h2>
+                      <ul
+                        class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                        <li class="flex items-center">
+                          <svg
+                            class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                          </svg>
+                          At least 10 characters
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                          </svg>
+                          At least one lowercase character
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 shrink-0"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                          </svg>
+                          At least one special character, e.g., ! @ # ?
+                        </li>
+                      </ul>
+
+                    </li>
+                    <li class="ms-8">
+                      <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600">
+                        <svg class="w-3.5 h-3.5 text-white dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z" />
+                        </svg>
+                      </span>
+                      <h3
+                        class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">¿Aún
+                        tienes dudas?</h3>
+                      <time
+                        class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-400">¡Descarga
+                        el
+                        temario de la sesión!</time>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL MÁS INFO END SECTION ---------------------------------------------------------->
+
+          <!----------------------------------------------------- MODAL INSCRIPCION POWER BI SECTION ---------------------------------------------------------->
+          <div id="authentication-modal2" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-blue-900">
+                  <h2
+                    class="text-center text-xl font-bold text-gray-900 dark:text-white">
+                    ¡Inscribete en el Seminario One Class de Power BI!
+                  </h2>
+                  <button type="button"
+                    class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Cerrar Modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <form class="space-y-4 max-w-lg mx-auto"
+                    action="https://formspree.io/f/mqadojpp" method="POST">
+                    <div class="col-span-2 sm:col-span-1">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Costo
+                        del Seminario One Class: </label>
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><i
+                          class="fa-solid fa-circle-check"
+                          style="color: #ffffff;"></i> S/. 25</label>
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Nombre:</label>
+                      <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nombre y Apellidos" required />
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Email:</label>
+                      <div class="relative mb-6">
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                          </svg>
+                        </div>
+                        <input type="text" id="input-group-1"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="¡A este email se enviará el link de la reunión!"
+                          required>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        for="user_avatar">Insertar
+                        Captura de Yape: </label>
+
+                      <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                          class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div
+                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg
+                              class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 20 16">
+                              <path stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p
+                              class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                class="font-semibold">Click para cargar</span>
+                              o arrastra y suelta</p>
+                            <p
+                              class="text-xs text-gray-500 dark:text-gray-400">SVG,
+                              PNG, JPG or GIF (MAX. 800x400px)</p>
+                          </div>
+                          <input id="dropzone-file" type="file"
+                            class="hidden" required />
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="text-center ">
+                      <button style="cursor: pointer;" type="button"
+                        class=" button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Enviar Inscripción
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL INSCRIPCION POWER BI END SECTION ---------------------------------------------------------->
+
+          <!----------------------------------------------------- MODAL INSCRIPCION JAVA SECTION ---------------------------------------------------------->
+          <div id="authentication-modal3" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-blue-900">
+                  <h2
+                    class="text-center text-xl font-bold text-gray-900 dark:text-white">
+                    ¡Inscribete en el Seminario One Class de Java!
+                  </h2>
+                  <button type="button"
+                    class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Cerrar Modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <form class="space-y-4 max-w-lg mx-auto"
+                    action="https://formspree.io/f/mqadojpp" method="POST">
+                    <div class="col-span-2 sm:col-span-1">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Costo
+                        del Seminario One Class: </label>
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><i
+                          class="fa-solid fa-circle-check"
+                          style="color: #ffffff;"></i> S/. 25</label>
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Nombre:</label>
+                      <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nombre y Apellidos" required />
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Email:</label>
+                      <div class="relative mb-6">
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                          </svg>
+                        </div>
+                        <input type="text" id="input-group-1"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="¡A este email se enviará el link de la reunión!"
+                          required>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        for="user_avatar">Insertar
+                        Captura de Yape: </label>
+
+                      <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                          class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div
+                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg
+                              class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 20 16">
+                              <path stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p
+                              class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                class="font-semibold">Click para cargar</span>
+                              o arrastra y suelta</p>
+                            <p
+                              class="text-xs text-gray-500 dark:text-gray-400">SVG,
+                              PNG, JPG or GIF (MAX. 800x400px)</p>
+                          </div>
+                          <input id="dropzone-file" type="file"
+                            class="hidden" required />
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="text-center ">
+                      <button style="cursor: pointer;" type="button"
+                        class=" button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Enviar Inscripción
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL INSCRIPCION JAVA END SECTION ---------------------------------------------------------->
+
+          <!----------------------------------------------------- MODAL INSCRIPCION PYTHON SECTION ---------------------------------------------------------->
+          <div id="authentication-modal4" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-blue-900">
+                  <h2
+                    class="text-center text-xl font-bold text-gray-900 dark:text-white">
+                    ¡Inscribete en el Seminario One Class de Python!
+                  </h2>
+                  <button type="button"
+                    class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Cerrar Modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <form class="space-y-4 max-w-lg mx-auto"
+                    action="https://formspree.io/f/mqadojpp" method="POST">
+                    <div class="col-span-2 sm:col-span-1">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Costo
+                        del Seminario One Class: </label>
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><i
+                          class="fa-solid fa-circle-check"
+                          style="color: #ffffff;"></i> S/. 25</label>
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Nombre:</label>
+                      <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nombre y Apellidos" required />
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Email:</label>
+                      <div class="relative mb-6">
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                          </svg>
+                        </div>
+                        <input type="text" id="input-group-1"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="¡A este email se enviará el link de la reunión!"
+                          required>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        for="user_avatar">Insertar
+                        Captura de Yape: </label>
+
+                      <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                          class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div
+                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg
+                              class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 20 16">
+                              <path stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p
+                              class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                class="font-semibold">Click para cargar</span>
+                              o arrastra y suelta</p>
+                            <p
+                              class="text-xs text-gray-500 dark:text-gray-400">SVG,
+                              PNG, JPG or GIF (MAX. 800x400px)</p>
+                          </div>
+                          <input id="dropzone-file" type="file"
+                            class="hidden" required />
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="text-center ">
+                      <button style="cursor: pointer;" type="button"
+                        class=" button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Enviar Inscripción
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL INSCRIPCION PYTHON END SECTION ---------------------------------------------------------->
+
+          <!----------------------------------------------------- MODAL INSCRIPCION BBDD SQL SECTION ---------------------------------------------------------->
+          <div id="authentication-modal5" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-blue-900">
+                  <h2
+                    class="text-center text-xl font-bold text-gray-900 dark:text-white">
+                    ¡Inscribete en el Seminario One Class de BBDD + SQL!
+                  </h2>
+                  <button type="button"
+                    class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Cerrar Modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <form class="space-y-4 max-w-lg mx-auto"
+                    action="https://formspree.io/f/mqadojpp" method="POST">
+                    <div class="col-span-2 sm:col-span-1">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Costo
+                        del Seminario One Class: </label>
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><i
+                          class="fa-solid fa-circle-check"
+                          style="color: #ffffff;"></i> S/. 25</label>
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Nombre:</label>
+                      <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nombre y Apellidos" required />
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Email:</label>
+                      <div class="relative mb-6">
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                          </svg>
+                        </div>
+                        <input type="text" id="input-group-1"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="¡A este email se enviará el link de la reunión!"
+                          required>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        for="user_avatar">Insertar
+                        Captura de Yape: </label>
+
+                      <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                          class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div
+                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg
+                              class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 20 16">
+                              <path stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p
+                              class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                class="font-semibold">Click para cargar</span>
+                              o arrastra y suelta</p>
+                            <p
+                              class="text-xs text-gray-500 dark:text-gray-400">SVG,
+                              PNG, JPG or GIF (MAX. 800x400px)</p>
+                          </div>
+                          <input id="dropzone-file" type="file"
+                            class="hidden" required />
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="text-center ">
+                      <button style="cursor: pointer;" type="button"
+                        class=" button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Enviar Inscripción
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL INSCRIPCION BBDD SQL END SECTION ---------------------------------------------------------->
+
+          <!----------------------------------------------------- MODAL INSCRIPCION ETHICAL HACKING SECTION ---------------------------------------------------------->
+          <div id="authentication-modal6" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-blue-900">
+                  <h2
+                    class="text-center text-xl font-bold text-gray-900 dark:text-white">
+                    ¡Inscribete en el Seminario One Class de Ethical Hacking!
+                  </h2>
+                  <button type="button"
+                    class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Cerrar Modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <form class="space-y-4 max-w-lg mx-auto"
+                    action="https://formspree.io/f/mqadojpp" method="POST">
+                    <div class="col-span-2 sm:col-span-1">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Costo
+                        del Seminario One Class: </label>
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><i
+                          class="fa-solid fa-circle-check"
+                          style="color: #ffffff;"></i> S/. 25</label>
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Nombre:</label>
+                      <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nombre y Apellidos" required />
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Email:</label>
+                      <div class="relative mb-6">
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                          </svg>
+                        </div>
+                        <input type="text" id="input-group-1"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="¡A este email se enviará el link de la reunión!"
+                          required>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        for="user_avatar">Insertar
+                        Captura de Yape: </label>
+
+                      <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                          class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div
+                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg
+                              class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 20 16">
+                              <path stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p
+                              class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                class="font-semibold">Click para cargar</span>
+                              o arrastra y suelta</p>
+                            <p
+                              class="text-xs text-gray-500 dark:text-gray-400">SVG,
+                              PNG, JPG or GIF (MAX. 800x400px)</p>
+                          </div>
+                          <input id="dropzone-file" type="file"
+                            class="hidden" required />
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="text-center ">
+                      <button style="cursor: pointer;" type="button"
+                        class=" button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Enviar Inscripción
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL INSCRIPCION ETHICAL HACKING END SECTION ---------------------------------------------------------->
+
+          <!----------------------------------------------------- MODAL INSCRIPCION ETHICAL HACKING SECTION ---------------------------------------------------------->
+          <div id="authentication-modal7" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-blue-900">
+                  <h2
+                    class="text-center text-xl font-bold text-gray-900 dark:text-white">
+                    ¡Inscribete en el Seminario One Class de Desarrollo Web!
+                  </h2>
+                  <button type="button"
+                    class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Cerrar Modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <form class="space-y-4 max-w-lg mx-auto"
+                    action="https://formspree.io/f/mqadojpp" method="POST">
+                    <div class="col-span-2 sm:col-span-1">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Costo
+                        del Seminario One Class: </label>
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><i
+                          class="fa-solid fa-circle-check"
+                          style="color: #ffffff;"></i> S/. 25</label>
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Nombre:</label>
+                      <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nombre y Apellidos" required />
+                    </div>
+
+                    <div>
+                      <label for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa
+                        tu Email:</label>
+                      <div class="relative mb-6">
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                          </svg>
+                        </div>
+                        <input type="text" id="input-group-1"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="¡A este email se enviará el link de la reunión!"
+                          required>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        for="user_avatar">Insertar
+                        Captura de Yape: </label>
+
+                      <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                          class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div
+                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg
+                              class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 20 16">
+                              <path stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p
+                              class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                class="font-semibold">Click para cargar</span>
+                              o arrastra y suelta</p>
+                            <p
+                              class="text-xs text-gray-500 dark:text-gray-400">SVG,
+                              PNG, JPG or GIF (MAX. 800x400px)</p>
+                          </div>
+                          <input id="dropzone-file" type="file"
+                            class="hidden" required />
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="text-center ">
+                      <button style="cursor: pointer;" type="button"
+                        class=" button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Enviar Inscripción
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------- MODAL INSCRIPCION ETHICAL HACKING END SECTION ---------------------------------------------------------->
+
+          <script
+            src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+          <script src="script.js"></script>
+
+        </body>
+
+      </html>
