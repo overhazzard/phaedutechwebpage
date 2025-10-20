@@ -406,27 +406,26 @@
         backdrop-filter: blur(60px);
         -webkit-backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(14, 218, 234, 0.2);
-        z-index: 1000;
+        z-index: 1000;                         
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow: 0 4px 20px rgba(1, 1, 71, 0.3), 
                     0 0 40px rgba(14, 218, 234, 0.1);
     }
 
     .navbar-modern.scrolled {
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(60px);
         -webkit-backdrop-filter: blur(30px);
         box-shadow: 0 8px 32px rgba(1, 1, 71, 0.5);
     }
 
     .navbar-container {
-        max-width: 1200px;
-        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.75rem 1.5rem;
+        padding: 2rem 2.5rem;
         height: 70px;
     }
+    
 
     /* Logo y Marca */
     .navbar-brand .navbar-logo {
@@ -443,7 +442,7 @@
         transition: all 0.3s ease;
         filter: drop-shadow(0 0 10px rgba(14, 218, 234, 0.3));
     }
-
+    
     .navbar-brand .brand-text {
         color: #ffffff;
         font-size: 1.5rem;
@@ -451,7 +450,7 @@
     }
 
     .navbar-brand:hover .logo-img {
-        transform: rotate(360deg) scale(1.1);
+        transform: scale(1.07);
         filter: drop-shadow(0 0 20px rgba(14, 218, 234, 0.6));
     }
 
@@ -739,231 +738,26 @@ box-shadow:  21px 21px 42px #070a10,
         animation: fadeInDown 0.6s ease-out;
     }
 
-    /* Espaciado para el contenido ya definido arriba */
-
-    .seccion-inicio {
-        background-image: url("https://img.freepik.com/vector-gratis/fondo-futurista-gradiente-concepto-conexion_23-2149110796.jpg?t=st=1760337205~exp=1760340805~hmac=e9b360306c3b8cc87e5ee1ffb8beda678090a83e02ee694d734e06cc6f4abf62&w=1480");
-        background-size: cover;
-        width: 100%;
-    }
-
-    .name-presentation2 {
-        color: white;
-        padding-top: 15px;
-    }
-
-    @keyframes flotando {
-
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-3px);
-        }
-    }
-
-    .landing-section {
-        background-image: url(/img/stars.png);
-        width: 100%;
-    }
-
-    .card-itm {
-        border: 1px solid var(--color-secundario);
-        border-radius: 8px;
-        background: linear-gradient(225deg, #010147, #01013b);
-        box-shadow: -7px 7px 15px #00001a,
-            7px -7px 15px #02026a;
-    }
-
-    .card-itm2 {
-        border: 1px solid var(--color-secundario);
-        cursor: pointer;
-    }
-
-    .card-itm:hover {
-        transform: scale(1.05);
-    }
-
-    .servicios-section:hover {
-        transform: scale(1.05);
-    }
-
-    .div-otros-serv {
-        background-image: url("");
-        background-size: cover;
-    }
-
-
-    .card-container {
-        width: 260px;
-        background: linear-gradient(to top right,
-                #975af4,
-                #2f7cf8 40%,
-                #78aafa 65%,
-                #934cff 100%);
-        padding: 4px;
-        border-radius: 32px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-container .title-card {
-        display: flex;
-        align-items: center;
-        padding: 16px 18px;
-        justify-content: space-between;
-        color: #fff;
-    }
-
-    .card-container .title-card p {
-        font-size: 14px;
-        font-weight: 600;
-        font-style: italic;
-        text-shadow: 2px 2px 6px #2975ee;
-    }
-
-    .card-container .card-content {
-        width: 100%;
-        height: 100%;
-        background-color: #161a20;
-        border-radius: 30px;
-        color: #838383;
-        font-size: 12px;
-        padding: 18px;
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    .card-container .card-content .title {
-        font-weight: 600;
-        color: #bab9b9;
-    }
-
-    .card-container .card-content .plain :nth-child(1) {
-        font-size: 36px;
-        color: #fff;
-    }
-
-    .card-container .card-content .card-btn {
-        background: linear-gradient(4deg,
-                #975af4,
-                #2f7cf8 40%,
-                #78aafa 65%,
-                #934cff 100%);
-        padding: 8px;
-        border: none;
-        width: 100%;
-        border-radius: 8px;
-        color: white;
-        font-size: 12px;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.6);
-    }
-
-    .card-container .card-content .card-btn:hover {
-        color: #ffffff;
-        text-shadow: 0 0 8px #fff;
-        transform: scale(1.03);
-    }
-
-    .card-container .card-content .card-btn:active {
-        transform: scale(1);
-    }
-
     .carrusel {
-        background-image: url("https://img.freepik.com/foto-gratis/vista-superior-hacker-irreconocible-realizando-ciberataque-noche_1098-18706.jpg?t=st=1760305068~exp=1760308668~hmac=263a85f3faef658e7da286b73d4f25ac8c0423b0e89785e2d57520e91ce8b26c&w=1480");
+        background-image: url("/img/carrusel2.jpg");
+        background-position: center;
+        background-size: cover;
     }
 
     .carrusel2 {
-        background-image: url("https://img.freepik.com/vector-gratis/fondo-conexion-degradado_23-2150462050.jpg?t=st=1760315219~exp=1760318819~hmac=f90b42a7a5b40252d921ae77a882dc7c2f68118451a47db08d745dc6204282ce&w=1480");
+        background-image: url("/img/carrusel1.jpg");
     }
 
     .carrusel3 {
-        background-image: url("https://img.freepik.com/vector-gratis/fondo-horizonte-futurista_23-2148299789.jpg?t=st=1760315673~exp=1760319273~hmac=80d62da8bb31bb7a17e32774eeef4b111c93cd3f3a2dd4f4ce1f6230d90fb25f&w=1480");
+        background-image: url("/img/carrusel3.jpg");
     }
 
     .carrusel4 {
-        background-image: url("/img/acompañar.jpeg");
+        background-image: url("/img/carrusel4.jpg");
     }
 
     .carrusel5 {
-        background-image: url("https://img.freepik.com/foto-gratis/apreton-manos-hombres-negocios_1098-742.jpg?t=st=1760314273~exp=1760317873~hmac=ad66c9ae8929bfc05e93afbad847b49e54fef732c4339278d1350c1c51e3a9f5&w=1480");
-    }
-
-    .information-section {
-        background-image: url("https://img.freepik.com/vector-gratis/fondo-futurista-gradiente-concepto-conexion_23-2149110796.jpg?t=st=1760337205~exp=1760340805~hmac=e9b360306c3b8cc87e5ee1ffb8beda678090a83e02ee694d734e06cc6f4abf62&w=1480");
-    }
-
-    .about {
-        background-size: cover; 
-        background-image: url("https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149000655.jpg?t=st=1760575529~exp=1760579129~hmac=ea8defddb041fd71653e7ce7d4f07031f80c51b2e51fce4751eb233341f0294f&w=1480");
-    }
-
-    .btn-ins {
-        border: 2px solid;
-        border-color: var(--color-secundario);
-    }
-
-    .btn-ins:hover {
-        transform: scale(1.07);
-    }
-
-    .btn-ins3 {
-        border: 1px solid;
-        border-color: var(--color-acento);
-        border-radius: 8px;
-        background: linear-gradient(225deg, #010147, #01013b);
-
-    }
-
-    .btn-ins3:hover {
-        border: 1px solid;
-        border-color: var(--color-secundario);
-        border-radius: 8px;
-        background: #02026a;
-        color: white;
-        box-shadow: -5px 5px 0px #00001a,
-            5px -5px 0px #02026a;
-        transform: scale(1.07);
-    }
-
-    .btn-ins2:hover {
-        border: 1px solid;
-        border-color: var(--color-acento);
-        background-color: var(--color-acento);
-        color: var(--color-primario);
-        font-weight: bold;
-    }
-
-    .img-card {
-        border-bottom: 1px solid;
-        border-color: var(--color-secundario);
-    }
-
-    @keyframes mover {
-    from {
-        left: 0;
-    }
-    to {
-        left: 200px;
-    }
-    }
-    .card-about {
-        border-radius: 8px ;
-        background-image: url("https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?t=st=1760424143~exp=1760427743~hmac=39ad2fee08bd3d6e560e0df770e4049532b8e4cb3b99d5b0b6239dd7334e75af&w=1480");
-        box-shadow: -5px 5px 0px #00001a,
-            5px -5px 0px #02026a;
-            border: 5px solid;
-        border-color: var(--color-primario);
-    }
-
-    .card-about:hover {
-        background-color: var(--color-primario);
-        transform: scale(1.08);
+        background-image: url("/img/carrusel5.jpg");
     }
 
     .about2 {
@@ -976,11 +770,11 @@ box-shadow:  21px 21px 42px #070a10,
         transform: scale(1.10);
     } 
 
-    .blog {
+    /*.blog {
         background-image: url("https://img.freepik.com/vector-gratis/fondo-conexion-red-puntos_23-2148879940.jpg?t=st=1760477543~exp=1760481143~hmac=8e1d270e533fcd4b03f79a72bbda0430f4c3f16fc1a5ef190da8000aa22db739&w=1480");
         background-size: cover;
         background-position: center;
-    }
+    }*/
 
     .stats-section {
         background-color: #0edaea;
@@ -1011,17 +805,16 @@ box-shadow:  21px 21px 42px #070a10,
 }
 
 .seminarios2 {
-    background-image: url("https://img.freepik.com/vector-gratis/fondo-tecnologico-formas-geometricas_23-2148897670.jpg?t=st=1760768233~exp=1760771833~hmac=9dbca9f48112c0d20ab78fd9a8decf7ee96af74db8b2c7fe15969b972ca22bbb&w=1480");
+    background-image: url("/img/seminarios.jpg");
     background-size: cover;
     background-position: center;
-    background-color: #111827;
+    background-color: #010147 ;
 }
 
 .otros-servicios {
-    background-image: url("https://img.freepik.com/vector-gratis/tecnologia-redes-globales-antecedentes-comunicacion-digital_53876-119502.jpg?t=st=1760769975~exp=1760773575~hmac=8fae879ad7b7d1d1eca0d1bb9b984ab1af41dffb981a10283d3255eb237eeddc&w=1480");
+    background-image: url("/img/about.png");
     background-position: center;
-    background-size: cover;
-    background-color: #0b59b5;
+    background-color: #111827;
         
 }
 
